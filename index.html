@@ -15,6 +15,9 @@
         <h1>BCM</h1>
         <p>Badminton Club du Moufia</p>
         <span>01 02 03 04 05</span>
+        <span></span>
+        <span></span>
+        <span></span>
         <nav>
             <ul>
                 <li>Accueil</li>
@@ -23,10 +26,11 @@
         </nav>
     </header>
 <section>
- <img src="images/bad-img1.jpg" class="img_acc">
+
+ <img src="images/bad-img1.jpg" alt="img_accueuil" class="img_acc">
+ <h2>Inscrivez-vous !</h2>
 
  <article>
-    <h2>Inscrivez-vous !</h2>
     <h3>Le Badminton Club du Moufia ouvre ses portes !</h3>
         <p>Le BCM, créé il y a 8 ans déjà, et compte cette année plus de 132
             inscrits, ouvre ses portes à toutes personnes à partir de 6 ans.
@@ -35,6 +39,13 @@
             Décembre 2022 au 31 Janvier 2023.Le club Vous n'avez qu'à ramener 
             votre tenue de sport, votre raquette et vos vollants !
         </p>
+
+        <div>
+            <div>A partir de 6 ans</div>
+            <div>Cotisation</div>
+            <div>Loisir & compétition</div>
+            <div>Nos horaires</div>
+        </div>
 </article>
 
 <article>
@@ -65,12 +76,12 @@
 
     <form action="/ma-page-de-traitement" method="post">
         <div>
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="user_name">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="user_name">
         </div>
         <div>
-            <label for="name">Prénom :</label>
-            <input type="text" id="name" name="user_name">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="user_name">
         </div>
         <div>
             <label for="mail">E-mail&nbsp;:</label>
@@ -84,7 +95,7 @@
         
         <div>
             <label>Telephone:</label>
-            <input type ="tel" name="tel" maxlength="10" Pattern="^0[0-9]{7}" />
+            <input type="tel" name="tel" maxlength="10">
             
         </div>
         <div class="button_formu">
