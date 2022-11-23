@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+     rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Badminton Club du Moufia</title>
+</head>
+<body>
+    <header>
+        <h1>BCM</h1>
+        <p>Badminton Club du Moufia</p>
+        <span>01 02 03 04 05</span>
+        <nav>
+            <ul>
+                <li>Accueil</li>
+                <li>Evènement(s) à venir</li>
+            </ul>
+        </nav>
+    </header>
+<section>
+ <img src="images/bad-img1.jpg" class="img_acc">
+
+ <article>
+    <h2>Inscrivez-vous !</h2>
+    <h3>Le Badminton Club du Moufia ouvre ses portes !</h3>
+        <p>Le BCM, créé il y a 8 ans déjà, et compte cette année plus de 132
+            inscrits, ouvre ses portes à toutes personnes à partir de 6 ans.
+            Que vous ayez comme objectif la compétition ou jouer par loisir, le
+            BCM s'adaptera à vous ! Le recrutement au club est ouvert du 1er 
+            Décembre 2022 au 31 Janvier 2023.Le club Vous n'avez qu'à ramener 
+            votre tenue de sport, votre raquette et vos vollants !
+        </p>
+</article>
+
+<article>
+    <h2>Planning et horaires</h2>
+    <ul>
+        <li>Lundi : 18h30-22h30</li>
+        <li>Mardi : 20h00-22h30</li>
+        <li>Jeudi : 20h00-22h30</li>
+        <li>Vendredi : 18h30-22h30</li>
+    </ul>
+    <p> Les cours se passent au Gymnase de Bourran (Rue Léo Lagrange
+        97490 Moufia)
+    </p>
+ </article>
+
+<article>
+    <h2>Tarifs des cotisations</h2>
+    <ul>
+        <li>Enfants : 6 à 12 ans : 125 euros</li>
+        <li>Jeunes : 13 à 18 ans : 140 euros</li>
+        <li>Adultes : 160 euros</li>
+    </ul>
+
+    <p>Vous pouvez nous contacter par téléphone en utilisant les informations
+    de contact plus haut ou bien remplir le formulaire suivant.
+    Nous reviendrons vers vous pour répondre à vos questions et finaliser 
+    l’inscription.</p>
+
+    <form action="/ma-page-de-traitement" method="post">
+        <div>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+            <label for="name">Prénom :</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+            <label for="mail">E-mail&nbsp;:</label>
+            <input type="email" id="mail" name="user_mail">
+        </div>
+
+        <div>
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+        
+        <div>
+            <label>Telephone:</label>
+            <input type ="tel" name="tel" maxlength="10" Pattern="^0[0-9]{7}" />
+            
+        </div>
+        <div class="button_formu">
+            <button type="submit">Envoyer la demande</button>
+        </div>
+    </form>
+
+</article>
+
+</section>
+ 
+<footer>
+    <h2>Nous contacter</h2>
+    <p>Maison des associations
+    <br>
+    55avenue des lilas 97490, MOUFIA
+    <br>
+    -
+    <br>
+    Tél : 01 02 03 04 05
+    <br>
+    E-mail: bcm_merignac@gmail.com
+    </p>
+</footer>
+
+</body>
+</html>
