@@ -12,22 +12,25 @@
 </head>
 <body>
     <header>
-        <h1>BCM</h1>
-        <p>Badminton Club du Moufia</p>
-        <span>01 02 03 04 05</span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <nav>
-            <ul>
-                <li>Accueil</li>
-                <li>Evènement(s) à venir</li>
-            </ul>
+
+        <nav class="navbar">
+            <div class="cont_header">
+                <a href="#" class="logo">B C M</a>
+                <h1 class="titre">Badminton Club du Moufia</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>Accueil</li>
+                    <li>Evènement(s) à venir</li>
+                </ul>
+            </div>
+        <img src="images/menu.png" alt="menu ham" class="menu_hum">
         </nav>
+        <img src="images/bad-img1.jpg" alt="img_accueuil" class="img_acc">
     </header>
+
 <section>
 
- <img src="images/bad-img1.jpg" alt="img_accueuil" class="img_acc">
  <h2>Inscrivez-vous !</h2>
 
  <article>
@@ -39,6 +42,9 @@
             Décembre 2022 au 31 Janvier 2023.Le club Vous n'avez qu'à ramener 
             votre tenue de sport, votre raquette et vos vollants !
         </p>
+        <div>
+            <button>Envoyer la demande</button>
+        </div>
 
         <div>
             <div>A partir de 6 ans</div>
@@ -120,6 +126,14 @@
     E-mail: bcm_merignac@gmail.com
     </p>
 </footer>
+
+<script> 
+        const menuHamburger = document.querySelector(".menu_hum")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('active')})
+</script>
 
 </body>
 </html>
