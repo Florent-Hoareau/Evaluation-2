@@ -26,6 +26,7 @@
             </div>
         <img src="images/menu.png" alt="menu ham" class="menu_hum">
         </nav>
+
         <img src="images/bad-img1.jpg" alt="img_accueuil" class="img_acc">
     </header>
 
@@ -33,28 +34,45 @@
 
  <h2>Inscrivez-vous !</h2>
 
- <article>
+ <article class="article1">
     <h3>Le Badminton Club du Moufia ouvre ses portes !</h3>
         <p>Le BCM, créé il y a 8 ans déjà, et compte cette année plus de 132
-            inscrits, ouvre ses portes à toutes personnes à partir de 6 ans.
+            inscrits, le club ouvre ses portes à toutes personnes à partir de 6 ans.
             Que vous ayez comme objectif la compétition ou jouer par loisir, le
             BCM s'adaptera à vous ! Le recrutement au club est ouvert du 1er 
-            Décembre 2022 au 31 Janvier 2023.Le club Vous n'avez qu'à ramener 
+            Décembre 2022 au 31 Janvier 2023.Vous n'avez qu'à ramener 
             votre tenue de sport, votre raquette et vos vollants !
         </p>
-        <div>
-            <button>Envoyer la demande</button>
+        <div class="cont_btn_direction_formu">
+            <button class="btn_direction_formu">Envoyer la demande</button>
         </div>
 
-        <div>
-            <div>A partir de 6 ans</div>
-            <div>Cotisation</div>
-            <div>Loisir & compétition</div>
-            <div>Nos horaires</div>
+        <div class="cont_quatres_elem">
+            <div>
+                <img src="images/cake.png" alt="âge" class="cake">
+                <p>A partir de 6 ans</p>
+                <p>Vous pouvez inscrire vos enfants à partir de 6 ans.</p>
+            </div>
+            <div>
+                <img src="images/signe.png" alt="cotisation" class="cotisation">
+                <p>Cotisation</p>
+                <p>Le prix de la cotisation est à partir de 125euros / an.
+                (détails)</p>
+            </div>
+            <div>
+                <img src="images/badminton.png" alt="bad" class="bad">
+                <p>Loisir & compétition</p>
+                <p>Loisir ou compétition, à vous de choisir !</p>
+            </div>
+            <div>
+                <img src="images/horaires.png" alt="horaire" class="horaire">
+                <p>Nos horaires</p>
+                <p>Vous pouvez nous contacter du lundi au vendredi de 10h à 19h00.</p>
+            </div>
         </div>
 </article>
 
-<article>
+<article class="article2">
     <h2>Planning et horaires</h2>
     <ul>
         <li>Lundi : 18h30-22h30</li>
@@ -67,7 +85,7 @@
     </p>
  </article>
 
-<article>
+<article class="article3">
     <h2>Tarifs des cotisations</h2>
     <ul>
         <li>Enfants : 6 à 12 ans : 125 euros</li>
@@ -80,7 +98,9 @@
     Nous reviendrons vers vous pour répondre à vos questions et finaliser 
     l’inscription.</p>
 
-    <form action="/ma-page-de-traitement" method="post">
+
+<div class="cont_formu">
+    <form class="formulaire" action="/ma-page-de-traitement" method="post">
         <div>
             <label for="nom">Nom :</label>
             <input type="text" id="nom" name="user_name">
@@ -90,24 +110,25 @@
             <input type="text" id="prenom" name="user_name">
         </div>
         <div>
-            <label for="mail">E-mail&nbsp;:</label>
-            <input type="email" id="mail" name="user_mail">
+            <label for="email">Email&nbsp;:</label>
+            <input type="email" id="email" name="user_mail">
         </div>
 
         <div>
-            <label for="msg">Message :</label>
-            <textarea id="msg" name="user_message"></textarea>
+            <label for="message">Message :</label>
+            <textarea id="message" name="user_message"></textarea>
         </div>
         
         <div>
-            <label>Telephone:</label>
+            <label for="phone">Telephone:</label>
             <input type="tel" name="tel" maxlength="10">
             
         </div>
         <div class="button_formu">
-            <button type="submit">Envoyer la demande</button>
+            <button type="submit" value="send">Envoyer la demande</button>
         </div>
     </form>
+</div>
 
 </article>
 
