@@ -51,6 +51,14 @@ footer h2{
     max-width: 100%;
 }
 
+.wrapper_header {
+    display:none;
+}
+
+.img_header{
+      display: none;
+}
+
 .menu_hum {
     display: block;
     width: 35px;
@@ -78,7 +86,6 @@ footer h2{
     flex-direction: column;
     align-items: center;
     margin : 0 auto;
-    padding-left: 0;
 }
 
 .navigation-links.active ul li {
@@ -90,8 +97,6 @@ footer h2{
 
 .cont_header {
     padding: 20px 0px 20px 20px;
-    display: flex;
-    justify-content: space-between;
     background-color: #FAE6B1;
 }
 
@@ -99,6 +104,12 @@ footer h2{
     font-size: 30px;
     color: #31525B;
     font-weight: bold;
+}
+
+.new {
+    width: 35px;
+    position: relative;
+    bottom: 75px; left: 115px;
 }
 
 /* -------------------------- INSCRIVEZ VOUS ----------------------- */
@@ -270,9 +281,131 @@ footer h2 {
     color: #31525B;
 }
 
+/* ----------------- MEDIA QUERRY MOYEN ECRAN --------------- */
 
 
 @media screen and (min-width: 450px) {
 
+/* ------ SEMENTICS ------ */
+
+    section{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+/* ------ HEADER ------ */
+
+    .menu_hum {
+        display: none;
+        padding: 0;
+    }
+
+    .titre, .navigation-links {
+        display:inline;
+    }
+
+    .titre {
+        font-size: 1em;
+        align-self:center;
+        position:relative;
+        bottom: 10px;
+    }
+     
+    .navigation-links ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: #31525B;
+        border: 2px solid #FAE6B1;
+    }
+
+    .navigation-links li {
+        /* border: 1px solid #FAE6B1; */
+        border-top: none;
+        border-bottom: none;
+        padding: 1em 2.5em 1em 2.5em;
+        color: white;
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+
+    .navigation-links li:hover {
+        background-color: #B3DEE5;
+        transition: all 0.3s ease;
+        color: black;
+    }
+
+    .new {
+        position:relative;
+        bottom: 12px; left: -42px;
+        width: 25px;
+        margin-right: -1.5em;
+    }
+
+    .wrapper_header{
+        display:inline;
+    }
+
+    /* -----------  Div du BCM + Badminton Club ... ----------- */
+    .cont_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* -----------  Div des réseaux sociaux ... ----------- */
+
+    .wrapper_header ul {
+        display:flex;
+        flex-direction: row;
+        gap:1em;
+        padding: 1em 0 0 0;
+    }
+
+    .wrapper_header li {
+        list-style: none;
+        display: inline-block;
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 50%;
+        transition: 0.5s; 
+        padding: 3px 9px;
+    }
+
+    .wrapper_header li:hover {
+        color: #31525B;
+        border: 1px solid #31525B;
+        transition: 0.5s;
+    }
+
+     /* -----------  div des cont_header et wrapper_header ... ----------- */
+
+    .cont_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #FAE6B1;
+        padding: 0.8em 0;
+
+    }
+
+    .img_header{
+        display: inline;
+        width: 90px;
+    }
 }
-    
+
+
+
+
+/* ----------------- MEDIA QUERRY GRAND ECRAN --------------- */
+
+
+/* @media screen and (min-width: 1200px) {
+    .menu_hum {
+    }
+} */
