@@ -9,7 +9,9 @@
 }
 
 section {
-    padding : 0em 1.6em;
+    /* padding : 0em 1.6em; */
+        width: 85%;
+        margin: 0 auto;
 }
 
 a {
@@ -225,7 +227,7 @@ footer h2{
 
 .cont_foot {
     background-color: #FAE6B1;
-    padding: 2.2em 1.1em 2.2em 1.1em;
+    padding: 1.5em 0em;
     margin-top: 6em;
 }
 
@@ -233,7 +235,8 @@ footer h2{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1em;
+    gap: 3em;
+    justify-content: center;
 }
 
 footer h2 {
@@ -288,10 +291,6 @@ footer h2 {
 
 /* ------ SEMENTICS ------ */
 
-    section{
-        width: 80%;
-        margin: 0 auto;
-    }
 
 /* ------ HEADER ------ */
 
@@ -389,14 +388,65 @@ footer h2 {
         flex-direction: row;
         justify-content: space-around;
         background-color: #FAE6B1;
-        padding: 0.8em 0;
-
+        padding: 0.8em 0 0.5em 0;
+        border: 2px solid #31525B;
     }
 
     .img_header{
         display: inline;
         width: 90px;
     }
+
+/* ------ SECTION ------ */
+
+    section {
+        width: clamp(85%,87.5%,90%);
+        margin: 0 auto;
+    }
+
+    .cont_quatres_elem {
+        width: clamp(50%,55%,60%);
+        margin: 0 auto;
+    }
+
+    #cont_formu {
+        width: clamp(85%,87.5%,90%);
+        margin: 2em auto;
+    }
+    
+    .user-details, input, .input-box, textarea {
+        text-align: center;
+        align-items: center;
+        width: clamp(85%,87.5%,90%);
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .img_acc {
+    display: inline-block;
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+    }
+
+    /* ------------------ FOOTER ------------------- */
+
+    .cont_info_footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5em;
+        justify-content: center;
+      }
+
+      .media ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+      }
+
 }
 
 
@@ -405,7 +455,27 @@ footer h2 {
 /* ----------------- MEDIA QUERRY GRAND ECRAN --------------- */
 
 
-/* @media screen and (min-width: 1200px) {
-    .menu_hum {
+@media screen and (min-width: 1200px) {
+        section{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .cont_quatres_elem {
+            width: clamp(50%,55%,60%);
+            margin: 0 auto;
+        }
+    
+        #cont_formu {
+            width: clamp(85%,87.5%,90%);
+            margin: 2em auto;
+        }
+
+        .user-details, input, .input-box, textarea {
+            text-align: center;
+            align-items: center;
+            width: clamp(85%,87.5%,90%);
+            margin: 0 auto;
+        }
     }
-} */
+
