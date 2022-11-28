@@ -41,6 +41,7 @@ footer h2{
     color: black;
 }
 
+
 /* -------------------------- NAVBAR ----------------------- */
 
 .article1 h3 {
@@ -69,6 +70,16 @@ footer h2{
 
 .titre, .navigation-links {
     display: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navigation-links a {
+    color: white;
+}
+
+.navigation-links.active a {
+    color: #31525B;
 }
 
 .navigation-links.active {
@@ -96,6 +107,16 @@ footer h2{
     color: #31525B;
 }
 
+.navigation-links.active ul li:last-of-type {
+    margin-left: 1.5em;
+}
+
+.new {
+    width: 35px;
+    position: relative;
+    bottom: 20px;
+}
+
 .cont_header {
     padding: 20px 0px 20px 20px;
     background-color: #FAE6B1;
@@ -107,11 +128,7 @@ footer h2{
     font-weight: bold;
 }
 
-.new {
-    width: 35px;
-    position: relative;
-    bottom: 75px; left: 115px;
-}
+
 
 /* ------------------ Tournoi ------------------- */
 
@@ -276,10 +293,9 @@ footer h2 {
         }
     
         .new {
-            position:relative;
-            bottom: 12px; left: -42px;
-            width: 25px;
-            margin-right: -1.5em;
+            width: 30px;
+            position: relative;
+            bottom: 15px; left: 0px;
         }
     
         .wrapper_header{
@@ -352,6 +368,12 @@ footer h2 {
             gap: 2em;
           }
 
+          .new {
+            width: 30px;
+            position: relative;
+            bottom: 15px; left: 0px;
+        }
+
 /* ------------------ TOURNOI ------------------- */
         
     .card {
@@ -386,10 +408,10 @@ footer h2 {
 
 }
 
-        /* ----------------- MEDIA QUERRY GRAND ECRAN --------------- */
+        /* ----------------- MEDIA QUERRY TABLETTE ET GRAND ECRAN --------------- */
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
     section{
         width: 80%;
         margin: 0 auto;

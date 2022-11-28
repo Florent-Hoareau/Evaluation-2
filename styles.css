@@ -22,6 +22,7 @@ ul {
     padding: 0;
 }
 
+
 h1,h2,h3,p{
     margin: 0;
     padding: 0;
@@ -70,6 +71,16 @@ footer h2{
 
 .titre, .navigation-links {
     display: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navigation-links a {
+    color: white;
+}
+
+.navigation-links.active a {
+    color: #31525B;
 }
 
 .navigation-links.active {
@@ -108,10 +119,14 @@ footer h2{
     font-weight: bold;
 }
 
+.navigation-links.active ul li:last-of-type {
+    margin-left: 1.5em;
+}
+
 .new {
     width: 35px;
     position: relative;
-    bottom: 75px; left: 115px;
+    bottom: 20px;
 }
 
 /* -------------------------- INSCRIVEZ VOUS ----------------------- */
@@ -338,10 +353,9 @@ footer h2 {
     }
 
     .new {
-        position:relative;
-        bottom: 12px; left: -42px;
-        width: 25px;
-        margin-right: -1.5em;
+        width: 30px;
+        position: relative;
+        bottom: 15px; left: 0px;
     }
 
     .wrapper_header{
@@ -406,7 +420,7 @@ footer h2 {
     }
 
     .cont_quatres_elem {
-        width: clamp(50%,55%,60%);
+        width: clamp(70%,80%,90%);
         margin: 0 auto;
     }
 
@@ -450,6 +464,27 @@ footer h2 {
 
 }
 
+/* ----------------- MEDIA QUERRY TABLETTE ECRAN --------------- */
+@media screen and (min-width: 900px) {
+    .cont_inscri {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 5em;
+    }
+
+    .inscri_info {
+        width: 40%;
+        align-self: center;
+
+    }
+
+    .cont_quatres_elem{
+        width: 50%;
+        margin: 0;
+    }
+
+}
 
 
 
@@ -457,13 +492,14 @@ footer h2 {
 
 
 @media screen and (min-width: 1200px) {
+        
         section{
-            width: 80%;
+            width: clamp(85%,87.5%,90%);
             margin: 0 auto;
         }
 
         .cont_quatres_elem {
-            width: clamp(50%,55%,60%);
+            width: clamp(70%,80%,90%);
             margin: 0 auto;
         }
     
