@@ -462,6 +462,11 @@ footer h2 {
         gap: 2em;
       }
 
+      .lien_flaticon {
+        text-align: center;
+        margin: 1em auto 0em auto
+      }
+
 }
 
 /* ----------------- MEDIA QUERRY TABLETTE ECRAN --------------- */

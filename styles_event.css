@@ -387,6 +387,10 @@ footer h2 {
         vertical-align: top;
     }
 
+    .card-title {
+        margin-bottom: 1em;
+    }
+
 /* ------------------ FOOTER ------------------- */
 
 
