@@ -224,6 +224,12 @@ footer h2 {
     color: #31525B;
 }
 
+.lien_flaticon {
+    font-size: 11px;
+    text-align: center;
+    margin: 1em auto 0em auto
+  }
+
 
 
 /* ----------------- MEDIA QUERRY MOYEN ECRAN --------------- */
