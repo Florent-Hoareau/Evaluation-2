@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE php>
+<php lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,7 @@
             <div class="cont_wrapper">
                 <img class="img_header" src="images/vollant2.png" alt="volant" >
                     <div class="cont_header">
-                        <a href="/index.html" class="logo fw-semibold">B C M</a>
+                        <a href="/index.php" class="logo fw-semibold">B C M</a>
                         <h1 class="titre fw-semibold">Badminton Club du Moufia</h1>
                     </div>
                         <div class="wrapper_header">
@@ -38,10 +38,10 @@
             </div>
                         <div class="navigation-links">
                             <ul>
-                                <li><a href="/index.html">
+                                <li><a href="/index.php">
                                 Accueil
                                 </a></li>
-                                <li><a href="/event.html">
+                                <li><a href="/event.php">
                                     Evènement(s) à venir <img src="images/new2.png" alt="new" class="new"></a>
                                 </li>
                                 
@@ -162,4 +162,4 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>    
 </body>
-</html>
+</php>
